@@ -1,0 +1,10 @@
+com/example/backagency/repo/Repo.class
+com/example/backagency/controller/Controller.class
+com/example/backagency/service/ReadService.class
+com/example/backagency/service/ContactServiceimpl.class
+com/example/backagency/service/ContactService.class
+com/example/backagency/controller/ReadController.class
+com/example/backagency/service/ReadSerciceimpl.class
+com/example/backagency/BackagencyApplication.class
+com/example/backagency/repo/ReadRepo.class
+com/example/backagency/model/Model.class
