@@ -54,7 +54,7 @@ public class testRepo {
         // Vérifier que la liste des modèles récupérés n'est pas vide
         assertThat(allModels).isNotEmpty();
         // Vérifier que la taille de la liste correspond au nombre de modèles enregistrés
-        assertThat(allModels.size()).isEqualTo(19);
+        assertThat(allModels.size()).isEqualTo(21);
     }
 
 }
