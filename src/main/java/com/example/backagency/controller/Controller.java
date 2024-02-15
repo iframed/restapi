@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/contact")
 
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://frontagency.onrender.com")
 
 
 @AllArgsConstructor

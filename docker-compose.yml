@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234567890
+      - POSTGRES_DB=apicrud
+    ports:
+      - '5432:5432'
+
+
+  apicrud:
+    container_name: conta
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8085:80'
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/apicrud
+
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234567890
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      
+    depends_on:
+      - postgres
