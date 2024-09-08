@@ -39,7 +39,10 @@ public class ReadController {
       return readService.lire();
     }
 
-
+    @GetMapping("/lire")
+    public List <Model> readaa(){
+      return readService.lire();
+    }
 
 
 }
