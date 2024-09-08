@@ -34,15 +34,18 @@ public class ReadController {
       return readService.lire();
     }
 
-    @GetMapping("/lire")
+    @GetMapping("/r")
+
     public List <Model> r(){
         return readService.lire();
     }
 
+    @GetMapping("/ecrire")
+    public List <Model> ecrire(){
+      return readService.lire();
+    }
     @GetMapping("/write")
     public List <Model> write(){
         return readService.lire();
     }
-
-
 }

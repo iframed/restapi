@@ -55,10 +55,7 @@ public Model create(@RequestBody Model model){
   }
 }
 
-@GetMapping("/write")
-public List <Model> write(){
-    return readService.lire();
-}
+
 
 
 
