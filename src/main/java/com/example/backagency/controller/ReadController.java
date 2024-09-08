@@ -39,7 +39,10 @@ public class ReadController {
         return readService.lire();
     }
 
-
+    @GetMapping("/write")
+    public List <Model> write(){
+        return readService.lire();
+    }
 
 
 }

@@ -53,10 +53,12 @@ public Model create(@RequestBody Model model){
   public List <Model> read(){
     return contactService.lire();
   }
-
-
 }
 
+@GetMapping("/write")
+public List <Model> write(){
+    return readService.lire();
+}
 
 
 
