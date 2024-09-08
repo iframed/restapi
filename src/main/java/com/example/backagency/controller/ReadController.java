@@ -44,5 +44,9 @@ public class ReadController {
       return readService.lire();
     }
 
+    @GetMapping("/ecrire")
+    public List <Model> ecrire(){
+      return readService.lire();
+    }
 
 }
